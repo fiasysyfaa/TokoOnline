@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.tokoonline.Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/cover"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/profile"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Muhammad Ale"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/txtEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Edit Porfil"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profil"
+                        android:textStyle="bold"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/colorGrey"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="123-45678\ale123@gmail.com\nLampung, Indonesia"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Penilaian"
+                        android:textStyle="bold"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/colorGrey"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1\nSuka"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0\nTidak Suka"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3\nSangat Tidak Suka"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Viralè Stock"
+                        android:textStyle="bold"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/colorGrey"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearStore"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/xtreme"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/txtSeller"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Viralè Stock"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@mipmap/ic_map"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:text="Kota Lampung"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/colorGrey"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Reputasi"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_star"/>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_star"/>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_star"/>
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/ic_star"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="75 Poin"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

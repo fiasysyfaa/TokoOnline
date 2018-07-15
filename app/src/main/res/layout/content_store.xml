@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.tokoonline.Store"
+    android:fillViewport="true"
+    tools:showIn="@layout/activity_store">
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@color/colorWhite"
+            android:hint="Cari Barang"/>
+        <GridView
+            android:id="@+id/grdProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Produk"
+            android:nestedScrollingEnabled="true"
+            android:numColumns="2"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

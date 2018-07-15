@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berhasil Masuk Keranjang!"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGrey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 Barang dari Lazday Indonesia"
+        android:textSize="10sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGrey"/>
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:text="LANJUT PEMBAYARAN"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/txtAdd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Tambah Barang Lagi"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>

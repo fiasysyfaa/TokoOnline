@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.tokoonline.status_fragment.Invoice">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_trans_clock1"
+                        android:padding="5dp"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_trans_money1"
+                        android:padding="5dp"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_trans_car1"
+                        android:padding="5dp"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_trans_drop1"
+                        android:padding="5dp"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/ic_trans_finish1"
+                        android:padding="5dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGrey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Transaksi: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INV/20170708/XVII/VII/91762089"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Status: "
+                        android:gravity="end"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DIBAYAR"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Lihat histori pengiriman"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:drawablePadding="5dp"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linearHist"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tanggal"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Status"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_margin="5dp"
+                        android:background="@color/colorGrey"/>
+                    <app.tokoonline.helper.NonScrollListView
+                        android:id="@+id/lstHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- P E M B E L I A N -->
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--TERIMA / ULAS BARANG-->
+                    <Button
+                        android:visibility="visible"
+                        android:id="@+id/btn_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/colorWhite"
+                        android:text="ULAS BARANG"/>
+                </RelativeLayout>
+
+                <!-- P E N J U A L A N -->
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:visibility="visible"
+                        android:id="@+id/btn_receipt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/colorWhite"
+                        android:text="MASUKKAN/EDIT RESI"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</FrameLayout>

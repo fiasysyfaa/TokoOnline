@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.tokoonline.Upload"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/btnPay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/xtreme"
+                        android:layout_margin="2dp"/>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/xtreme"
+                        android:layout_margin="2dp"/>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/xtreme"
+                        android:layout_margin="2dp"/>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/xtreme"
+                        android:layout_margin="2dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Barang"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/edt_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="Harga"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/edt_stock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="Stok"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/edt_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kategori"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="7"
+                    android:maxLines="10"
+                    android:hint="Deskripsi"
+                    android:gravity="top|left"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="JUAL"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>
